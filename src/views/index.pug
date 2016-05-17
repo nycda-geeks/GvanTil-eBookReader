@@ -1,18 +1,17 @@
 doctype html
 html
 	head
-		script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
+		script(src="https://code.jquery.com/jquery-2.2.0.min.js")
+		script(src="js/custom.js") 
 	body
 		h1 Three books by John Williams
-		div#bookssmall
-			img(src='Butcherssmall.jpg')
-			img(src='Augustussmall.jpg')
-			img(src='Stonersmall.jpg')
-
-		div#bookbig
-			img#cover
-			p#book_info
-
+		each book in books
+			img.thumb (src="/images" + book.thumb, style="height: 100px; width; 100px; float: left; padding: 10px", title=book.title)
+		div#display(style="width: 60%; float: left; padding: 0 20%;") 
+			img#cover(style="max-width: 100%;") 
+			h2#title
+			p#author
+			p#description
 
 
 
