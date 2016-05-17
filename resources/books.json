@@ -1,14 +1,23 @@
-{
-	"Book 1": {
-		"title" : "Butchers Crossing",
-		"author" : "John Williams"
-	},
-	"Book 2": {
+[
+	{
 		"title" : "Augustus",
-		"author" : "John Williams"
+		"author" : "John Williams",
+		"desc" : "A book about a Roman emperor",
+		"thumb" : "augustus-thumb.jpg",
+		"cover" : "augustus-cover.jpg"
 	},
-	"Book 3": {
+	{
+		"title" : "Butcher\'s Crossing",
+		"author" : "John Williams",
+		"desc" : "A book about a buffalo hunt in North America",
+		"thumb" : "butcherscrossing-thumb.jpg",
+		"cover" : "butcherscrossing-cover.jpg"
+	},
+	{
 		"title" : "Stoner",
-		"author" : "John Williams"
-	},
-}
+		"author" : "John Williams",
+		"desc" : "A book about a professor in English literature",
+		"thumb" : "stoner-thumb.jpg",
+		"cover" : "stoner-cover.jpg"
+	}
+]
