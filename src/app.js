@@ -20,10 +20,29 @@ app.get('/', (request, response)=>{
 		} else {
 			var parsedBooks = JSON.parse (data)]
 			console.log (parsedBooks)
-			res.render ('index', { books:parsedBooks })
+			response.render ('index', { books:parsedBooks })
 		}
 	})
 });
+
+app.get ('/api', (request, response) => {
+	var booktitle = request.query.title
+	var bookmatch = {}
+	fs.readFile ('./resources/books.json', function (error, data ){
+		if (error) {
+			throw error
+		} else {
+			var parsedBooks = JSON.parse (data)
+			console.log (parsedBooks)
+			for (var i = 0; i < parsedBooks.lenght; i ++){
+				if (parsedbooks[i].title == booktitle){
+					bookmatch = parsedBooks[i]
+				}
+			}
+			response.send ( bookmatch )
+		}
+	})
+})
 
 // SERVER SET UP
 
