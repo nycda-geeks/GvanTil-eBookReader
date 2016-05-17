@@ -1,0 +1,22 @@
+{
+  "name": "ebookreader",
+  "version": "1.0.0",
+  "description": "A eBookReader",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nycda-geeks/GvanTil-eBookReader.git"
+  },
+  "author": "G. van Til",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nycda-geeks/GvanTil-eBookReader/issues"
+  },
+  "homepage": "https://github.com/nycda-geeks/GvanTil-eBookReader#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
