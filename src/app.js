@@ -18,7 +18,7 @@ app.get('/', (request, response)=>{
 		if (error){
 			throw error
 		} else {
-			var parsedBooks = JSON.parse (data)]
+			var parsedBooks = JSON.parse (data)
 			console.log (parsedBooks)
 			response.render ('index', { books:parsedBooks })
 		}

@@ -4,7 +4,7 @@ $ ( document ) .ready (function () {
 		var clickedBook = $ (this).attr ('title')
 		console.log ("You sir clicked " + clickedBook)
 		var ajaxdata = {
-			title: clickedbook
+			title: clickedBook
 		}
 		$.get ('/api', ajaxdata, function (data){
 			console.log (data)

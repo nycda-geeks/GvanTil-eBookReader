@@ -6,7 +6,7 @@ html
 	body
 		h1 Three books by John Williams
 		each book in books
-			img.thumb (src="/images" + book.thumb, style="height: 100px; width; 100px; float: left; padding: 10px", title=book.title)
+			img.thumb(src="/images/" + book.thumb, style="height: 300px; width: 200px; float: left; padding: 10px;", title=book.title)
 		div#display(style="width: 60%; float: left; padding: 0 20%;") 
 			img#cover(style="max-width: 100%;") 
 			h2#title
